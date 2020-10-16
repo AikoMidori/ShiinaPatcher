@@ -1,0 +1,53 @@
+﻿<Window x:Class="WPFUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFUI"
+        mc:Ignorable="d" FontSize="18" FontFamily="Segoe UI Light" Foreground="white"
+        Title="Shiina's Patcher" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="SingleBorderWindow">
+    <Grid>
+
+        <Grid.Background>
+            <ImageBrush Stretch="fill" ImageSource="C:/Users/bryan/source/repos/PatcherProject/WPFUI/images/shiina.png" AlignmentY="Top" AlignmentX="Center"/>
+        </Grid.Background>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="1" Grid.Row="1" FontSize="36" FontWeight="SemiBold" 
+                   Text="Shiina's Patcher" Grid.ColumnSpan="3" Margin="0,0,0,-10"/>
+        <TextBlock Grid.Column="1" Grid.Row="2" 
+                   Text="Beta version 0.1.0"/>
+        <Button Grid.Column="1" Grid.Row="3"  Content="DarkMode"
+                Margin="0 25 0 0" Height="50" Width="150" Style="{StaticResource RoundButtonTemplate}"/>
+        <Button Grid.Column="1" Grid.Row="4" x:Name="button1" Content="Library"
+                Margin="0 5 0 0" Height="50" Width="150" Style="{StaticResource RoundButtonTemplate}"/>
+        <Button Grid.Column="1" Grid.Row="5" x:Name="button2" Content="Friends"
+                Margin="0 5 0 0" Height="50" Width="150" Style="{StaticResource RoundButtonTemplate}"/>
+        <Button Grid.Column="2" Grid.Row="3" x:Name="button3" Content="About"
+                Margin="5 25 0 0" Height="50" Width="150" Style="{StaticResource RoundButtonTemplate}"/>
+        <Button Grid.Column="2" Grid.Row="4" x:Name="button4" Content="Developers"
+                Margin="5 5 0 0" Height="50" Width="150" Style="{StaticResource RoundButtonTemplate}"/>
+        <Button Grid.Column="1" Grid.Row="6" x:Name="button5" Content="Close" Click="Close"
+                Margin="0 70 0 0" Height="50" Width="150" Style="{StaticResource RoundButtonTemplate}"/>
+    </Grid>
+</Window>
