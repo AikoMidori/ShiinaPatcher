@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\bryan\source\repos\PatcherProject\WPFUI\App.xaml
-11151548125
+4-1127562355
 
-52092826877
+81354985703
 1921654412462
-MainWindow.xaml;
+ComingSoon.xaml;DownloadDM.xaml;DownloadLIB.xaml;MainWindow.xaml;
 
-True
+False
 

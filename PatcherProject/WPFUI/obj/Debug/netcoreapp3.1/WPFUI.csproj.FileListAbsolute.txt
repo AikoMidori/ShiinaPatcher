@@ -18,3 +18,9 @@ C:\Users\bryan\source\repos\PatcherProject\WPFUI\obj\Debug\netcoreapp3.1\WPFUI.d
 C:\Users\bryan\source\repos\PatcherProject\WPFUI\obj\Debug\netcoreapp3.1\WPFUI.pdb
 C:\Users\bryan\source\repos\PatcherProject\WPFUI\obj\Debug\netcoreapp3.1\WPFUI.genruntimeconfig.cache
 C:\Users\bryan\source\repos\PatcherProject\WPFUI\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\bryan\source\repos\PatcherProject\WPFUI\obj\Debug\netcoreapp3.1\DownloadDM.g.cs
+C:\Users\bryan\source\repos\PatcherProject\WPFUI\obj\Debug\netcoreapp3.1\DownloadDM.baml
+C:\Users\bryan\source\repos\PatcherProject\WPFUI\obj\Debug\netcoreapp3.1\DownloadLIB.g.cs
+C:\Users\bryan\source\repos\PatcherProject\WPFUI\obj\Debug\netcoreapp3.1\DownloadLIB.baml
+C:\Users\bryan\source\repos\PatcherProject\WPFUI\obj\Debug\netcoreapp3.1\ComingSoon.g.cs
+C:\Users\bryan\source\repos\PatcherProject\WPFUI\obj\Debug\netcoreapp3.1\ComingSoon.baml

@@ -6,4 +6,24 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="ShiinaC.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\ShiinaC.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="ComingSoon.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DownloadLIB.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DownloadDM.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
 </Project>

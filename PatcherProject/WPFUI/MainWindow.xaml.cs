@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -21,13 +23,51 @@ namespace WPFUI
     /// 
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
         }
-        private void Close(object sender, RoutedEventArgs e)
+
+        private void buttonDM(object sender, RoutedEventArgs e)
         {
-            Close();
+            DownloadDM win2 = new DownloadDM();
+            win2.ShowDialog();
+        }
+
+        private void buttonLIB(object sender, RoutedEventArgs e)
+        {
+            DownloadLIB win2 = new DownloadLIB();
+            win2.ShowDialog();
+        }
+
+        private void buttonFR(object sender, RoutedEventArgs e)
+        {
+            ComingSoon win2 = new ComingSoon();
+            win2.ShowDialog();
+        }
+
+        private void buttonABT(object sender, RoutedEventArgs e)
+        {
+            ComingSoon win2 = new ComingSoon();
+            win2.ShowDialog();
+        }
+
+        private void buttonDEV(object sender, RoutedEventArgs e)
+        {
+            ComingSoon win2 = new ComingSoon();
+            win2.ShowDialog();
+        }
+
+        private void buttonINS(object sender, RoutedEventArgs e)
+        {
+            ComingSoon win2 = new ComingSoon();
+            win2.ShowDialog();
+        }
+
+        private void Shutdown(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }

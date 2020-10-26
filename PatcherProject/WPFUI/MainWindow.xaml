@@ -4,14 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFUI"
-        mc:Ignorable="d" FontSize="18" FontFamily="Segoe UI Light" Foreground="white"
-        Title="Shiina's Patcher" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="SingleBorderWindow">
+        mc:Ignorable="d" FontSize="18" FontFamily="Segoe UI Light" Foreground="#1e1e1f"
+        Title="Shiina's Patcher" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="#f5cac2" WindowStyle="SingleBorderWindow">
     <Grid>
-
-        <Grid.Background>
-            <ImageBrush Stretch="fill" ImageSource="C:/Users/bryan/source/repos/PatcherProject/WPFUI/images/shiina.png" AlignmentY="Top" AlignmentX="Center"/>
-        </Grid.Background>
-
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20" />
             <ColumnDefinition Width="auto" />
@@ -37,17 +32,20 @@
                    Text="Shiina's Patcher" Grid.ColumnSpan="3" Margin="0,0,0,-10"/>
         <TextBlock Grid.Column="1" Grid.Row="2" 
                    Text="Beta version 0.1.0"/>
-        <Button Grid.Column="1" Grid.Row="3"  Content="DarkMode"
+        <Button Grid.Column="1" Grid.Row="3" x:Name="button" Content="DarkMode" Click="buttonDM"
                 Margin="0 25 0 0" Height="50" Width="150" Style="{StaticResource RoundButtonTemplate}"/>
-        <Button Grid.Column="1" Grid.Row="4" x:Name="button1" Content="Library"
+        <Button Grid.Column="1" Grid.Row="4" x:Name="button1" Content="Library" Click="buttonLIB"
                 Margin="0 5 0 0" Height="50" Width="150" Style="{StaticResource RoundButtonTemplate}"/>
-        <Button Grid.Column="1" Grid.Row="5" x:Name="button2" Content="Friends"
+        <Button Grid.Column="1" Grid.Row="5" x:Name="button2" Content="Friends" Click="buttonFR"
                 Margin="0 5 0 0" Height="50" Width="150" Style="{StaticResource RoundButtonTemplate}"/>
-        <Button Grid.Column="2" Grid.Row="3" x:Name="button3" Content="About"
+        <Button Grid.Column="2" Grid.Row="3" x:Name="button3" Content="About" Click="buttonABT"
                 Margin="5 25 0 0" Height="50" Width="150" Style="{StaticResource RoundButtonTemplate}"/>
-        <Button Grid.Column="2" Grid.Row="4" x:Name="button4" Content="Developers"
+        <Button Grid.Column="2" Grid.Row="4" x:Name="button4" Content="Developers" Click="buttonDEV"
                 Margin="5 5 0 0" Height="50" Width="150" Style="{StaticResource RoundButtonTemplate}"/>
-        <Button Grid.Column="1" Grid.Row="6" x:Name="button5" Content="Close" Click="Close"
+        <Button Grid.Column="2" Grid.Row="5" x:Name="button5" Content="Insctructions" Click="buttonINS"
+                Margin="5 5 0 0" Height="50" Width="150" Style="{StaticResource RoundButtonTemplate}"/>
+        <Button Grid.Column="1" Grid.Row="6" x:Name="button6" Content="Close" Click="Shutdown"
                 Margin="0 70 0 0" Height="50" Width="150" Style="{StaticResource RoundButtonTemplate}"/>
+        <Image Grid.ColumnSpan="8" Grid.RowSpan="8" Stretch="Uniform" Source="/images/ShiinaC.png" HorizontalAlignment="right"/>
     </Grid>
 </Window>
