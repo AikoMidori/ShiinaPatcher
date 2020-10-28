@@ -43,7 +43,7 @@ namespace WPFUI
 
         private void buttonFR(object sender, RoutedEventArgs e)
         {
-            ComingSoon win2 = new ComingSoon();
+            DownloadFR win2 = new DownloadFR();
             win2.ShowDialog();
         }
 
@@ -69,5 +69,14 @@ namespace WPFUI
         {
             Application.Current.Shutdown();
         }
+
+        private void Window_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                this.DragMove();
+            }
+        }
+
     }
 }

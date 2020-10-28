@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFUI"
         mc:Ignorable="d" FontSize="18" FontFamily="Segoe UI Light" Foreground="#1e1e1f"
-        Title="Shiina's Patcher" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="#f5cac2" WindowStyle="SingleBorderWindow">
+        Title="Shiina's Patcher" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="#f5cac2" WindowStyle="SingleBorderWindow" Icon="/steam.png" MouseMove="Window_MouseMove">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20" />
@@ -46,6 +46,7 @@
                 Margin="5 5 0 0" Height="50" Width="150" Style="{StaticResource RoundButtonTemplate}"/>
         <Button Grid.Column="1" Grid.Row="6" x:Name="button6" Content="Close" Click="Shutdown"
                 Margin="0 70 0 0" Height="50" Width="150" Style="{StaticResource RoundButtonTemplate}"/>
-        <Image Grid.ColumnSpan="8" Grid.RowSpan="8" Stretch="Uniform" Source="/images/ShiinaC.png" HorizontalAlignment="right"/>
+        <Image Grid.ColumnSpan="8" Grid.RowSpan="8" Stretch="Uniform" Source="/images/ShiinaC.png" HorizontalAlignment="right" Margin="0 0 90 0"/>
     </Grid>
 </Window>
+

@@ -35,6 +35,6 @@
                     Check back later!
         </TextBlock>
         <Button Grid.Column="1" Grid.Row="4" x:Name="button3" Content="Go Back" Click="Close"
-                Margin="0 180 0 0" Height="50" Width="150" Style="{StaticResource RoundButtonTemplate}"/>
+                Margin="0 190 0 0" Height="50" Width="150" Style="{StaticResource RoundButtonTemplate}"/>
     </Grid>
 </Window>

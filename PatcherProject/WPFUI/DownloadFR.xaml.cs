@@ -15,6 +15,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
+using System.Windows.Shapes;
 
 namespace WPFUI
 {
@@ -22,9 +23,9 @@ namespace WPFUI
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     /// 
-    public partial class DownloadDM : Window
+    public partial class DownloadFR : Window
     {
-		public DownloadDM()
+		public DownloadFR()
 		{
 			InitializeComponent();
 		}
@@ -35,33 +36,22 @@ namespace WPFUI
 			if (skinDir == null)
 				return;
 			WebClient webClient = new WebClient();
-			webClient.DownloadFileAsync(new Uri("https://raw.githubusercontent.com/AikoMidori/steam-dark-mode/master/webkit.css"), skinDir + "\\webkit.css");
+			webClient.DownloadFileAsync(new Uri("https://raw.githubusercontent.com/AikoMidori/steam-friends-skin/master/friends.custom.css"), skinDir + "\\friends.custom.css");
 			webClient.DownloadFileCompleted += new AsyncCompletedEventHandler(Completed);
 		}
 
 		private static string FindSteamSkinDir()
 		{
 			string filePath = null;
-			string skinName = null;
 			using (var registryKey = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Valve\\Steam"))
 			{
 				var regFilePath = registryKey?.GetValue("SteamPath");
-				var activeSkin = registryKey?.GetValue("SkinV5");
-				filePath = regFilePath.ToString().Replace(@"/", @"\") + "\\skins\\" + activeSkin.ToString().Replace(@"/", @"\") + "\\test";
-				skinName = (string)activeSkin;
-			}
-			if (filePath != null)
-			{
-				MessageBox.Show("Steam Skin: " + skinName);
-			}
-			else
-			{
-				MessageBox.Show("Steam installation not found");
+				filePath = regFilePath.ToString().Replace(@"/", @"\") + "\\clientui\\";
 			}
 			return filePath;
 		}
 
-        private void Window_MouseMove(object sender, MouseEventArgs e)
+		private void Window_MouseMove(object sender, MouseEventArgs e)
 		{
 			if (e.LeftButton == MouseButtonState.Pressed)
 			{
@@ -76,7 +66,7 @@ namespace WPFUI
 
 		private void Close(object sender, RoutedEventArgs e)
 		{
-			Close();
+					Close();
 		}
 	}
 }

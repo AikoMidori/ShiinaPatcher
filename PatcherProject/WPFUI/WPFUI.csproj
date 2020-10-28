@@ -4,18 +4,39 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>patcher.ico</ApplicationIcon>
+    <Authors>Shiina♪</Authors>
+    <Company>shiinaskins.com</Company>
+    <Product>Shiina's Patcher</Product>
+    <PackageId>ShiinaPatcher</PackageId>
+    <Copyright>shiinaskins.com</Copyright>
+    <SignAssembly>false</SignAssembly>
+    <StartupObject></StartupObject>
+    <AssemblyName>ShiinaPatcher</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Properties\**" />
+    <EmbeddedResource Remove="Properties\**" />
+    <None Remove="Properties\**" />
+    <Page Remove="Properties\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="ShiinaC.png" />
+    <None Remove="steam.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="images\ShiinaC.png" />
+    <Resource Include="steam.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Page Update="ComingSoon.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DownloadFR.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="DownloadLIB.xaml">
