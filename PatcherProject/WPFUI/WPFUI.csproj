@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
-    <ApplicationIcon>patcher.ico</ApplicationIcon>
+    <ApplicationIcon></ApplicationIcon>
     <Authors>Shiina♪</Authors>
     <Company>shiinaskins.com</Company>
     <Product>Shiina's Patcher</Product>
@@ -13,6 +13,17 @@
     <SignAssembly>false</SignAssembly>
     <StartupObject></StartupObject>
     <AssemblyName>ShiinaPatcher</AssemblyName>
+    <Configurations>Debug;Release;Shiina Installer</Configurations>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>
@@ -33,7 +44,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Page Update="ComingSoon.xaml">
+    <Page Update="Developers.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="DownloadFR.xaml">

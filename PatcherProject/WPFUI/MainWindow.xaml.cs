@@ -49,19 +49,13 @@ namespace WPFUI
 
         private void buttonABT(object sender, RoutedEventArgs e)
         {
-            ComingSoon win2 = new ComingSoon();
-            win2.ShowDialog();
-        }
-
-        private void buttonDEV(object sender, RoutedEventArgs e)
-        {
-            ComingSoon win2 = new ComingSoon();
+            Developers win2 = new Developers();
             win2.ShowDialog();
         }
 
         private void buttonINS(object sender, RoutedEventArgs e)
         {
-            ComingSoon win2 = new ComingSoon();
+            Developers win2 = new Developers();
             win2.ShowDialog();
         }
 
